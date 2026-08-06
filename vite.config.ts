@@ -4,6 +4,10 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  resolve: { tsconfigPaths: true },
-  optimizeDeps: { exclude: ['lucide-react'] },
+  resolve: {
+    tsconfigPaths: true,
+  },
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+  },
 });
